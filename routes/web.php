@@ -14,4 +14,16 @@
 // Route::get('/', function () {
     // return view('welcome');
 // });
-Route::get('/', 'PagesController@add');
+Route::get('/', 'PagesController@top');
+Route::get('/teams', 'PagesController@teams')->name('teams');
+
+//giants
+Route::get('/players', 'PagesController@players')->name('players');
+
+
+
+Route::get('/players/giants', 'PagesController@players');
+
+Auth::routes();
+
+
